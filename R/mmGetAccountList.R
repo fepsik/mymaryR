@@ -1,5 +1,5 @@
 #'Get Accounts
-
+#'@export
 mmGetAccountList <- function(acc_id = NULL, mm_token = new_token) {
 acc_id <- as.character(acc_id)
 
@@ -9,7 +9,7 @@ answer <- GET("https://app.mymarilyn.ru/api/accounts",
 stop_for_status(answer)
 if (answer$status_code == 200) message("Alright!") else message("Not Today!")
 
-dataraw <- content(answer, "parsed", "application/json")
+dataRaw <- content(answer, "parsed", "application/json")
 
 data <- data.frame()
 for (i in 1:length(dataRaw$items)){

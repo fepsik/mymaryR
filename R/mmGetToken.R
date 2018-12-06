@@ -1,8 +1,9 @@
 #' Get Token
 #' 
-#' Function for get token
-#' @export
+#' @param tree the tree for which the amount of honey is estimated
 #' 
+#' @return numeric the estimated amount of good honey
+#' @export
 #' @examples
 #' new_token <- mmGetToken(Login = "email-mail.ru", Password = "yourpassword123")
 mmGetToken <- function(Login = NULL, Password = NULL) {
@@ -14,6 +15,6 @@ mmGetToken <- function(Login = NULL, Password = NULL) {
                           encode = "json")
   if (token_raw$status_code == 200) message("Succes")
   else message("Fail")
-  new_token <- as.character(content(token_raw)[3])
+  new_token <- as.character(httr::content(token_raw)[3])
   return(new_token)
 }
