@@ -1,0 +1,14 @@
+Package: mymaryR
+Title: Work with My Marilyn System
+Version: 0.0.0.9000
+Authors@R: person("Nikta", "Kulik", email = "n.kulik@rta-moscow.com", role = c("aut", "cre"))
+Description: I hate Marilyn but clients make me work in that not so good system.
+Depends: R (>= 3.5.0)
+Imports:
+  utils, httr, RCurl, bitops, jsonlite, xml2, data.table, readr, magrittr, dplyr
+License: GPL-2
+Encoding: CP1251
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: 
+    testthat
