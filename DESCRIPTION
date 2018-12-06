@@ -7,8 +7,8 @@ Depends: R (>= 3.5.0)
 Imports:
   utils, httr, RCurl, bitops, jsonlite, xml2, data.table, readr, magrittr, dplyr
 License: GPL-2
-Encoding: CP1251
+Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Suggests: 
     testthat
