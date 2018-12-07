@@ -3,4 +3,5 @@
 export(mmGetAccountList)
 export(mmGetOrders)
 export(mmGetProjects)
+export(mmGetStat)
 export(mmGetToken)
