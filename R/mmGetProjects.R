@@ -3,7 +3,7 @@
 mmGetProjects <- function(acc_id = NULL, mm_token = new_token) {
 
 answer <- GET("https://app.mymarilyn.ru/api/projects",
-              add_headers("X-API-Account" = AccId, "X-API-Token" = new_token))
+              add_headers("X-API-Account" = acc_id, "X-API-Token" = new_token))
 
 stop_for_status(answer)
 
