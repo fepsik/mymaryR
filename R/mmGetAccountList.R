@@ -1,4 +1,8 @@
 #'Get Accounts
+#'
+#' @param acc_id
+#' @param mm_token
+#'
 #'@export
 mmGetAccountList <- function(acc_id = NULL, mm_token = new_token) {
 acc_id <- as.character(acc_id)
@@ -13,7 +17,7 @@ dataRaw <- content(answer, "parsed", "application/json")
 
 data <- data.frame()
 for (i in 1:length(dataRaw$items)){
- 
+
   dataRaw$items[[i]][c('id','type','status','name')][sapply(dataRaw$items[[i]][c('id','type','status','name')], is.null)] <- NA
   dataTemp <- data.frame(t(as.data.frame(unlist(dataRaw$items[[i]][c('id','name','type','status')],recursive = T))),row.names = NULL)
   data <- rbind(data, dataTemp)
