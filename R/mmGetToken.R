@@ -1,11 +1,11 @@
 #' Get Token
-#' 
-#' @param tree the tree for which the amount of honey is estimated
-#' 
+#'
+#' @param Login
+#' @param Password
+#'
 #' @return numeric the estimated amount of good honey
 #' @export
-#' @examples
-#' new_token <- mmGetToken(Login = "email-mail.ru", Password = "yourpassword123")
+#' @examples new_token <- mmGetToken(Login = "email-mail.ru", Password = "yourpassword123")
 mmGetToken <- function(Login = NULL, Password = NULL) {
   message("Welcome!")
   token_raw  <- httr::PUT("https://app.mymarilyn.ru/api/auth",

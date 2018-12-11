@@ -7,7 +7,7 @@
 mmGetAccountList <- function(acc_id = NULL, mm_token = new_token) {
 acc_id <- as.character(acc_id)
 
-answer <- GET("https://app.mymarilyn.ru/api/accounts",
+answer <- httr::GET("https://app.mymarilyn.ru/api/accounts",
               add_headers("X-API-Account" = acc_id, "X-API-Token" = mm_token))
 
 stop_for_status(answer)
