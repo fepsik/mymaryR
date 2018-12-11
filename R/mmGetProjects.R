@@ -2,14 +2,14 @@
 #'@export
 mmGetProjects <- function(acc_id = NULL, mm_token = new_token) {
 
-answer <- GET("https://app.mymarilyn.ru/api/projects",
-              add_headers("X-API-Account" = acc_id, "X-API-Token" = new_token))
+answer <- httr::GET("https://app.mymarilyn.ru/api/projects",
+                    httr::add_headers("X-API-Account" = acc_id, "X-API-Token" = mm_token))
 
-stop_for_status(answer)
+httr::stop_for_status(answer)
 
 if (answer$status_code == 200) message("Alright!") else message("Not today, body")
 
-dataRaw <- content(answer, "parsed", "application/json")
+dataRaw <- httr::content(answer, "parsed", "application/json")
 
 data <- data.frame()
 for (i in 1:length(dataRaw$items)){
