@@ -14,11 +14,9 @@ httr::stop_for_status(answer)
 if (answer$status_code == 200) message("Alright!") else message("Not Today!")
 
 dataRaw <- httr::content(answer, "parsed", "application/json")
-i = NULL
+
 data <- data.frame()
 for (i in 1:length(dataRaw$items)){
-
-  dataRaw$items[[i]][c('id','type','status','name')][sapply(dataRaw$items[[i]][c('id','type','status','name')], is.null)] <- NA
   dataTemp <- data.frame(t(as.data.frame(unlist(dataRaw$items[[i]][c('id','name','type','status')],recursive = T))),row.names = NULL)
   data <- rbind(data, dataTemp)
 }
