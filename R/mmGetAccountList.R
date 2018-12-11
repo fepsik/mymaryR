@@ -14,7 +14,7 @@ httr::stop_for_status(answer)
 if (answer$status_code == 200) message("Alright!") else message("Not Today!")
 
 dataRaw <- httr::content(answer, "parsed", "application/json")
-
+i = NULL
 data <- data.frame()
 for (i in 1:length(dataRaw$items)){
 
