@@ -1,4 +1,4 @@
-#' Get Token
+#' @name mmGetToken
 #'
 #' @param Login
 #' @param Password

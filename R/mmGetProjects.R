@@ -1,4 +1,8 @@
 #'GetProjects from acc
+#'
+#' @param acc_id
+#' @param mm_token
+#'
 #'@export
 mmGetProjects <- function(acc_id = NULL, mm_token = new_token) {
 

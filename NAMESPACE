@@ -3,6 +3,7 @@
 export(mmGetAccountList)
 export(mmGetChannels)
 export(mmGetOrders)
+export(mmGetPlacementInfo)
 export(mmGetProjects)
 export(mmGetStat)
 export(mmGetToken)
