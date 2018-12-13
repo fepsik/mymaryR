@@ -1,10 +1,10 @@
-#' @param mm_token
+#'@param mm_token
 #'
 #'@export
 mmGetChannels <- function(mm_token = new_token) {
 
-  answer <- GET("https://app.mymarilyn.ru/api/channels",add_headers("X-API-Token" = mm_token))
-  stop_for_status(answer)
+  answer <- httr::GET("https://app.mymarilyn.ru/api/channels",add_headers("X-API-Token" = mm_token))
+  httr::stop_for_status(answer)
 
   if (answer$status_code == 200) message("Complete") else message("Wrong")
 
