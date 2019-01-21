@@ -2,12 +2,15 @@
 % Please edit documentation in R/mmGetOrders.R
 \name{mmGetOrders}
 \alias{mmGetOrders}
-\title{Getting Orders and 
+\title{Getting Orders and
 ProjectId can be Vector!}
 \usage{
 mmGetOrders(acc_id = NULL, ProjectId = NULL, mm_token = new_token)
 }
+\arguments{
+\item{mm_token}{}
+}
 \description{
-Getting Orders and 
+Getting Orders and
 ProjectId can be Vector!
 }
