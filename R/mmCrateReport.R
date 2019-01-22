@@ -51,7 +51,7 @@ mmCreateReport <- function(acc_id = NULL,
                      "report_format")
 
   answer <- httr::POST("https://app.mymarilyn.ru/api/reports",
-                      httr::add_headers("X-API-Account" = "7409",
+                      httr::add_headers("X-API-Account" = acc_id,
                                   "X-API-Token" = mm_token),
                       body = statement, encode = "json")
   stop_for_status(answer)
