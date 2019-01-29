@@ -20,14 +20,15 @@ mmCreateReport <- function(acc_id = NULL,
                            mm_token = new_token,
                            start_date = Sys.Date(),
                            end_date = Sys.Date(),
-                           placements = NULL,
+                           entity_type = "PLACEMENT",
+                           entities = NULL,
                            dimensions = c("date", "ad_text", "keyword_text"),
                            metrics = c("impressions", "clicks", "ctr", "cpc_fact", "cost_fact"),
-                           locale = "en",
-                           format = "csv") {
+                           locale = "ru",
+                           format = "XLSX") {
 
 
-  statement <- list(ProjectId,start_date, end_date,"PLACEMENT", placements,
+  statement <- list(ProjectId,start_date, end_date,entity_type, entities,
        dimensions,
        "MIXED",
        metrics,
@@ -36,6 +37,8 @@ mmCreateReport <- function(acc_id = NULL,
        locale,
        format
   )
+
+
 
   names(statement) <- c("project_id",
                    "start_date",
@@ -54,9 +57,9 @@ mmCreateReport <- function(acc_id = NULL,
                       httr::add_headers("X-API-Account" = acc_id,
                                   "X-API-Token" = mm_token),
                       body = statement, encode = "json")
-  stop_for_status(answer)
+  httr::stop_for_status(answer)
   message(answer$status_code)
-  message(httr::content(answer, "parsed", "application/json"))
+  return(httr::content(answer, "parsed", "application/json"))
 
 
 }
