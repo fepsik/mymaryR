@@ -28,7 +28,7 @@ mmCreateReport <- function(acc_id = NULL,
                            format = "XLSX") {
 
 
-  statement <- list(ProjectId,start_date, end_date,entity_type, entities,
+  statement <- list(ProjectId,start_date, end_date, entity_type, as.integer(entities),
        dimensions,
        "MIXED",
        metrics,
