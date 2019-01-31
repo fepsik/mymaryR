@@ -5,10 +5,10 @@
 \title{mmReportCreator}
 \usage{
 mmCreateReport(acc_id = NULL, ProjectId = NULL, mm_token = new_token,
-  start_date = Sys.Date(), end_date = Sys.Date(), placements = NULL,
-  dimensions = c("date", "ad_text", "keyword_text"),
-  metrics = c("impressions", "clicks", "ctr", "cpc_fact", "cost_fact"),
-  locale = "en", format = "XLSX")
+  start_date = Sys.Date(), end_date = Sys.Date(),
+  entity_type = "PLACEMENT", entities = NULL, dimensions = c("date",
+  "ad_text", "keyword_text"), metrics = c("impressions", "clicks", "ctr",
+  "cpc_fact", "cost_fact"), locale = "ru", format = "XLSX")
 }
 \arguments{
 \item{format}{}
