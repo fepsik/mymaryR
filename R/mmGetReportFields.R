@@ -20,6 +20,7 @@ mmGetReportFields <- function(acc_id = NULL, mm_token = new_token, ProjectId = N
 
 
   data <- list()
+  data2 <- data.frame()
 
   dataRaw <- httr::content(answer, "parsed", "application/json")
   for (n in 1:length(dataRaw[["metrics"]])){
@@ -33,12 +34,18 @@ mmGetReportFields <- function(acc_id = NULL, mm_token = new_token, ProjectId = N
 
 
 
+    for (i in 1:length(dataRaw[["dimensions"]])) {
+      dataTemp <- data.frame(
+        dataRaw[["dimensions"]][[i]][c('id','name')])
+      data2 <- rbind(data2, dataTemp)
+    }
 
 
 
 
 
-  return(data)
+  dataFin <- list(data,data2)
+  return(dataFin)
 
 
 }
