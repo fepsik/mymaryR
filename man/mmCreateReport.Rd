@@ -11,7 +11,7 @@ mmCreateReport(acc_id = NULL, ProjectId = NULL, mm_token = new_token,
   "cpc_fact", "cost_fact"), locale = "ru", format = "XLSX")
 }
 \arguments{
-\item{format}{}
+\item{entities}{}
 }
 \description{
 mmReportCreator

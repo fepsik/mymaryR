@@ -5,11 +5,12 @@
 #' @param mm_token
 #' @param start_date
 #' @param end_date
-#' @param placements
 #' @param dimensions
 #' @param metrics
 #' @param locale
 #' @param format
+#' @param entity_type
+#' @param entities
 #'
 #' @return
 #' @export
