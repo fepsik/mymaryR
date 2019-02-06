@@ -11,6 +11,7 @@
 #' @param format
 #' @param entity_type
 #' @param entities
+#' @param operating_networks
 #'
 #' @return
 #' @export
@@ -24,6 +25,7 @@ mmCreateReport <- function(acc_id = NULL,
                            entity_type = "PLACEMENT",
                            entities = NULL,
                            dimensions = c("date", "ad_text", "keyword_text"),
+                           operating_networks = "NETWORK_AND_SEARCH",
                            metrics = c("impressions", "clicks", "ctr", "cpc_fact", "cost_fact"),
                            locale = "ru",
                            format = "XLSX") {
@@ -31,7 +33,7 @@ mmCreateReport <- function(acc_id = NULL,
 
   statement <- list(ProjectId,start_date, end_date, entity_type, as.integer(entities),
        dimensions,
-       "MIXED",
+       operating_networks,
        metrics,
        FALSE,
        TRUE,
