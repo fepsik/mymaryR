@@ -22,25 +22,24 @@ mmCreateReport <- function(acc_id = NULL,
                            mm_token = new_token,
                            start_date = Sys.Date(),
                            end_date = Sys.Date(),
-                           entity_type = "PLACEMENT",
+                           entity_type = "ORDER",
                            entities = NULL,
-                           dimensions = c("date", "ad_text", "keyword_text"),
-                           operating_networks = "NETWORK_AND_SEARCH",
-                           metrics = c("impressions", "clicks", "ctr", "cpc_fact", "cost_fact"),
+                           dimensions = c("date"),
+                           operating_networks = c("NETWORK","SEARCH","MIXED","VIDEO"),
+                           metrics = c("impressions", "clicks"),
                            locale = "ru",
                            format = "XLSX") {
 
 
-  statement <- list(ProjectId,start_date, end_date, entity_type, as.integer(entities),
+  statement <- list(as.integer(ProjectId),start_date, end_date, entity_type, as.integer(entities),
        dimensions,
        operating_networks,
        metrics,
        FALSE,
-       TRUE,
+       FALSE,
        locale,
        format
   )
-
 
 
   names(statement) <- c("project_id",
