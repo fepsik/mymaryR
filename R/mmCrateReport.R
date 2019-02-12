@@ -1,4 +1,4 @@
-#' mmReportCreator
+#' Creates report.
 #'
 #' @param acc_id
 #' @param ProjectId
@@ -10,6 +10,7 @@
 #' @param locale
 #' @param format
 #' @param entity_type
+#' Type of entities to get report for: “ORDER” or “PLACEMENT”.
 #' @param entities
 #' @param operating_networks
 #'

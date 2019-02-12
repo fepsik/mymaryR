@@ -2,18 +2,20 @@
 % Please edit documentation in R/mmCrateReport.R
 \name{mmCreateReport}
 \alias{mmCreateReport}
-\title{mmReportCreator}
+\title{Creates report.}
 \usage{
 mmCreateReport(acc_id = NULL, ProjectId = NULL, mm_token = new_token,
   start_date = Sys.Date(), end_date = Sys.Date(),
-  entity_type = "PLACEMENT", entities = NULL, dimensions = c("date",
-  "ad_text", "keyword_text"), operating_networks = "NETWORK_AND_SEARCH",
-  metrics = c("impressions", "clicks", "ctr", "cpc_fact", "cost_fact"),
-  locale = "ru", format = "XLSX")
+  entity_type = "ORDER", entities = NULL, dimensions = c("date"),
+  operating_networks = c("NETWORK", "SEARCH", "MIXED", "VIDEO"),
+  metrics = c("impressions", "clicks"), locale = "ru",
+  format = "XLSX")
 }
 \arguments{
+\item{entity_type}{Type of entities to get report for: “ORDER” or “PLACEMENT”.}
+
 \item{operating_networks}{}
 }
 \description{
-mmReportCreator
+Creates report.
 }
