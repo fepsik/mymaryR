@@ -18,7 +18,6 @@ mmReportList <- function(acc_id = NULL,
   answer <- httr::GET(paste0("https://app.mymarilyn.ru/api/projects/",ProjectId,"/reports?page=1&per_page=10"),
                       httr::add_headers("X-API-Account" = acc_id,
                                         "X-API-Token" = mm_token))
-  message(httr::content(answer, "parsed", "application/json")$status)
   httr::stop_for_status(answer)
 
   if (answer$status_code == 200) message("Alright!") else message("Not Today!")
