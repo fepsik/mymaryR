@@ -3,7 +3,11 @@
 \name{mmReportList}
 \alias{mmReportList}
 \title{mmReportList
+<<<<<<< HEAD
 Getin last 10 reports}
+=======
+Getin last 100 reports}
+>>>>>>> facf5cead6dcd31c3aa833064d1c211a8a7b892d
 \usage{
 mmReportList(acc_id = NULL, ProjectId = NULL, mm_token = new_token)
 }
@@ -11,8 +15,13 @@ mmReportList(acc_id = NULL, ProjectId = NULL, mm_token = new_token)
 \item{mm_token}{}
 }
 \description{
+<<<<<<< HEAD
 Getin last 10 reports
 }
 \examples{
 mmReportList(acc_id = 12345, ProjectId = 12345, mm_token = new_token)
+=======
+mmReportList
+Getin last 100 reports
+>>>>>>> facf5cead6dcd31c3aa833064d1c211a8a7b892d
 }

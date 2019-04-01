@@ -1,12 +1,3 @@
-#' mmReportList
-#' Getin last 10 reports
-#'
-#' @param acc_id
-#' @param ProjectId
-#' @param mm_token
-#'
-#' @return
-#' @export
 #' @name mmReportList
 #' @description Getin last 10 reports
 #' @examples mmReportList(acc_id = 12345, ProjectId = 12345, mm_token = new_token)
@@ -35,5 +26,6 @@ mmReportList <- function(acc_id = NULL,
   return(data)
 
 }
+
 
 
