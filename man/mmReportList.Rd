@@ -3,7 +3,7 @@
 \name{mmReportList}
 \alias{mmReportList}
 \title{mmReportList
-Getin last 100 reports}
+Getin last 10 reports}
 \usage{
 mmReportList(acc_id = NULL, ProjectId = NULL, mm_token = new_token)
 }
@@ -11,6 +11,8 @@ mmReportList(acc_id = NULL, ProjectId = NULL, mm_token = new_token)
 \item{mm_token}{}
 }
 \description{
-mmReportList
-Getin last 100 reports
+Getin last 10 reports
+}
+\examples{
+mmReportList(acc_id = 12345, ProjectId = 12345, mm_token = new_token)
 }
