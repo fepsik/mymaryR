@@ -9,7 +9,7 @@ mmCreateReport(acc_id = NULL, ProjectId = NULL, mm_token = new_token,
   entity_type = "ORDER", entities = NULL, dimensions = c("date"),
   operating_networks = c("NETWORK", "SEARCH", "MIXED", "VIDEO"),
   metrics = c("impressions", "clicks"), locale = "ru",
-  format = "XLSX")
+  format = "XLSX", notification = FALSE)
 }
 \arguments{
 \item{entity_type}{Type of entities to get report for: “ORDER” or “PLACEMENT”.}

@@ -29,7 +29,8 @@ mmCreateReport <- function(acc_id = NULL,
                            operating_networks = c("NETWORK","SEARCH","MIXED","VIDEO"),
                            metrics = c("impressions", "clicks"),
                            locale = "ru",
-                           format = "XLSX") {
+                           format = "XLSX",
+                           notification = FALSE) {
 
 
   statement <- list(as.integer(ProjectId),start_date, end_date, entity_type, as.integer(entities),
@@ -39,7 +40,8 @@ mmCreateReport <- function(acc_id = NULL,
        FALSE,
        FALSE,
        locale,
-       format
+       format,
+       notification
   )
 
 
@@ -54,7 +56,8 @@ mmCreateReport <- function(acc_id = NULL,
                      "exclude_discount",
                      "with_vat",
                      "locale",
-                     "report_format")
+                     "report_format",
+                    "completion_notification")
 
   answer <- httr::POST("https://app.mymarilyn.ru/api/reports",
                       httr::add_headers("X-API-Account" = acc_id,
