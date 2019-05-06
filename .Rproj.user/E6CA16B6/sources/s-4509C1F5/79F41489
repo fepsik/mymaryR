@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544716875449.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "79F41489",
+    "lastKnownWriteTime" : 1549934505,
+    "last_content_update" : 1549934505572,
+    "path" : "~/mymaryR/R/mmGetOrders.R",
+    "project_path" : "R/mmGetOrders.R",
+    "properties" : {
+        "cursorPosition" : "13,173",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

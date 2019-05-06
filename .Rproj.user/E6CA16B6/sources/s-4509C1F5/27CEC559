@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548171076346.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "27CEC559",
+    "lastKnownWriteTime" : 1548761428,
+    "last_content_update" : 1548761428748,
+    "path" : "~/mymaryR/R/mmReportInfo.R",
+    "project_path" : "R/mmReportInfo.R",
+    "properties" : {
+        "cursorPosition" : "12,42",
+        "scrollLine" : "0",
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

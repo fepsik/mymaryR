@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556276408842.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AF9F5981",
+    "lastKnownWriteTime" : 1549018103,
+    "last_content_update" : 1549018103,
+    "path" : "~/mymaryR/R/mmGetReportFields.R",
+    "project_path" : "R/mmGetReportFields.R",
+    "properties" : {
+        "cursorPosition" : "30,33",
+        "scrollLine" : "0",
+        "tempName" : "Untitled4"
+    },
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

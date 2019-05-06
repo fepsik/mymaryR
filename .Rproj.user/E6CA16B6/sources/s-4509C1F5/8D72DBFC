@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1554116202841.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8D72DBFC",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1554116202841,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "436c734e9b4b41e190cc4ec7bb2bcd09",
+        "name" : "dataRaw",
+        "title" : "dataRaw"
+    },
+    "relative_order" : 15,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

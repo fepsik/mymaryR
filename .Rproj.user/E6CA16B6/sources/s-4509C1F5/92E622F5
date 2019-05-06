@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548953439306.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "92E622F5",
+    "lastKnownWriteTime" : 1544558641,
+    "last_content_update" : 1553599304817,
+    "path" : "~/mymaryR/R/mmGetAccountList.R",
+    "project_path" : "R/mmGetAccountList.R",
+    "properties" : {
+        "cursorPosition" : "21,1",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

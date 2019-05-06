@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544554643099.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7C5B7BC8",
+    "lastKnownWriteTime" : 1544717013,
+    "last_content_update" : 1544717013186,
+    "path" : "~/mymaryR/R/mmGetChannels.R",
+    "project_path" : "R/mmGetChannels.R",
+    "properties" : {
+        "cursorPosition" : "16,4",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

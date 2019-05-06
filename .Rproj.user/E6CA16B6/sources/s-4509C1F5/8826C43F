@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544716748704.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8826C43F",
+    "lastKnownWriteTime" : 1544716871,
+    "last_content_update" : 1544716871101,
+    "path" : "~/mymaryR/R/mmGetPlacementInfo.R",
+    "project_path" : "R/mmGetPlacementInfo.R",
+    "properties" : {
+        "cursorPosition" : "19,126",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
