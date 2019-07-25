@@ -17,7 +17,7 @@ mmGetPlacementInfo <- function(acc_id = NULL, ProjectId = NULL, mm_token = new_t
 
     dataRaw <- httr::content(answer, "parsed", "application/json")
     for (i in 1:length(dataRaw$items)){
-      dataTemp <- data.frame(t(as.data.frame(unlist(dataRaw$items[[i]][c('id','project_id','order_ids','name','campaign_xid','utm_source','utm_campaign')],recursive = T))),row.names = NULL)
+      dataTemp <- data.frame(t(as.data.frame(unlist(dataRaw$items[[i]][c('id','project_id','order_ids','name','campaign_xid','utm_source','utm_campaign','fact_status')],recursive = T))),row.names = NULL)
       data <- rbind(data, dataTemp)
     }
   }
